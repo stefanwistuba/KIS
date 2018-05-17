@@ -11,6 +11,15 @@ public class Q {
         this.reward = reward;
     }
     
+    public String toString() {
+    	String state = "";
+    	for(int i = 0; i<this.state.length; i++) {
+    		state+= this.state[i] + " ";
+    	}
+    	state += " " + "Act: " + this.action + " ";
+    	return state;
+    }
+    
 //    public int[] getState() {
 //    	return this.state;
 //    }

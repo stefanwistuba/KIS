@@ -13,8 +13,9 @@ public class Test extends LineFollowerAbstract{
 	}
 
 	@Override
-	protected void executeAction(int action) {
+	protected int executeAction(int action) {
 		System.out.println("Execute action: " + action);
+		return 0;
 	}
 
 	@Override
